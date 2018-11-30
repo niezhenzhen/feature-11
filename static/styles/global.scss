@@ -1,0 +1,178 @@
+@font-face {
+    font-family: SourceHanSansCN;
+    src: url("../fonts/SourceHanSansCN/SourceHanSansCN-Medium.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: FangHei;
+    src: url("../fonts/MF-FangHei-Noncommercial-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PixelLCD;
+    src: url("../fonts/PixelLCD.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 1920px;
+    height: 1080px;
+    list-style: none;
+    font-size: 14px;
+    color: #fff;
+    background: #080c22;
+    font-family: SourceHanSansCN;
+}
+#app{
+    width: 100%;
+    height: 100%;
+}
+input {
+    border: none;
+    outline: none;
+}
+
+.v-echarts .swiper-container {
+    width: 950px;
+}
+
+.v-rankings .swiper-wrapper {
+    height: 190px;
+}
+
+.v-burangings .swiper-wrapper {
+    height: 330px;
+}
+
+.swiper-wrapper li {
+    background-color: #0f122e;
+    height: 42px;
+    margin-top: 5px;
+}
+
+.v-list li {
+    background: rgba(0, 0, 0, 0.2);
+    height: 42px;
+    margin-top: 5px;
+}
+
+.float-left {
+    float: left;
+}
+
+.mt-progress-progress {
+    background: rgb(226, 182, 111);
+    border-radius: 20px;
+}
+
+.mt-progress-runway {
+    width: 700px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.v-color .mt-progress-progress {
+    background: red;
+}
+
+.mt-progress-progress {
+    -webkit-animation: progressbar 2s ease-out;
+    animation: progressbar 2s ease-out;
+}
+
+@-webkit-keyframes progressbar {
+    from {
+        width: 0
+    }
+    to {
+        width: 50%
+    }
+}
+
+@keyframes progressbar {
+    from {
+        width: 0
+    }
+    to {
+        width: 50%
+    }
+}
+
+.margin-left-50 {
+    margin-left: 50px;
+}
+.margin-left-70 {
+    margin-left: 70px;
+}
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+.margin-top-15 {
+    margin-top: 15px;
+}
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.mint-header {
+    background: rgba(0, 0, 0, 0);
+}
+
+.mint-header-button.is-left {
+    text-align: center;
+    font-size: 55px;
+}
+
+.mint-header-button.is-right {
+    text-align: center;
+    font-size: 26px;
+}
+
+.bounce-dot {
+    position: absolute;
+    top: 52px;
+    width: 15px;
+    height: 15px;
+    & > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        opacity: 0.6;
+        animation: bounce 2s infinite ease-in-out;
+        background: #e70f73;
+    }
+}
+
+@keyframes bounce {
+    0%, 50%, to {
+        animation-timing-function: cubic-bezier(.5, 0, .5, 1)
+    }
+
+    0%, to {
+        box-shadow: 0 0 0 0 rgba(146, 175, 168, 0.5)
+    }
+
+    50% {
+        box-shadow: 0 0 0 8px rgba(146, 175, 168, 0.2)
+    }
+}
